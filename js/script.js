@@ -70,6 +70,14 @@ taboItems.forEach(checkoutTabso)
 $(document).ready(function(){
   $('.carousel').slick({
     prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>'
+    nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 });
